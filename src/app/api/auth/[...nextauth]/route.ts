@@ -1,6 +1,11 @@
-import { authOptions } from "@/app/utils/auth";
-import NextAuth from "next-auth/next";
+import { handlers } from "../../../../auth";
+export const { GET, POST } = handlers;
 
-const handler = NextAuth(authOptions);
+// Deprecated
 
-export { handler as GET, handler as POST };
+// import { authOptions } from "@/app/utils/auth";
+// import NextAuth from "next-auth/next";
+
+// const handler = NextAuth(authOptions);
+
+// export { handler as GET, handler as POST };
